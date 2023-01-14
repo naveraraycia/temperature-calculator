@@ -1,0 +1,89 @@
+.card {
+  margin-top: 5rem;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 3rem!important;
+
+}
+
+.card-content span, h5{
+  font-weight: 500!important;
+  letter-spacing: 1px!important;
+
+}
+
+.input-row {
+  display: flex!important;
+}
+
+.col.s2 {
+  display: flex!important;
+  justify-content: center;
+  align-items: center!important;
+}
+
+i {
+  color: #ef9a9a!important;
+  font-size: 25px;
+}
+
+.btn {
+  width: 100%!important;
+  text-transform: capitalize;
+  color: #263238!important;
+  letter-spacing: 1px!important;
+  font-size: 20px!important;
+  padding-top: 14px!important;
+  padding-bottom: 14px!important;
+  height: fit-content!important;
+
+}
+
+
+.select-wrapper .caret {
+  fill: #ef9a9a!important;
+}
+
+.dropdown-content li a, .dropdown-content li span {
+  color: #ef9a9a!important;
+}
+
+.select-dropdown{
+  color: white!important;
+}
+
+/* label focus color */
+.input-field input:focus + label {
+  color: #ef9a9a !important;
+}
+/* label underline focus color */
+.row .input-field input:focus {
+  border-bottom: 1px solid #ef9a9a !important;
+  box-shadow: 0 1px 0 0 #ef9a9a !important
+}
+
+#result {
+  font-weight: 300!important;
+  font-size: 35px!important;
+}
+
+.result-heading {
+  margin-top: 3rem
+}
+
+.input-field [type=text] {
+  font-family: 'Montserrat', sans-serif;
+  color:white!important;
+  letter-spacing: 1px;
+}  
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

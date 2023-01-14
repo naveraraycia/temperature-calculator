@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- FONT AWESOME CDN -->
+   <script src="https://kit.fontawesome.com/57070be855.js" crossorigin="anonymous"></script>
+  
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet"> 
+  
+  <link rel="stylesheet" href="style/style.css">
+  <title>Temperature Calculator</title>
+</head>
+<body class="blue-grey darken-4">
+
+  <div class="container">
+    <div class="row">
+      <div class="card blue-grey darken-3 z-depth-0">
+        <div class="card-content white-text">
+          <span class="card-title center-align">Temperature Calculator</span>
+          <form>  
+            <div class="row input-row">
+              <div class="input-field col s5">
+                <select name="tempFrom" id="tempFrom" class="pink">
+                  <option value="Celsius" class="white-text">Celsius</option>
+                  <option value="Fahrenheit" class="white-text">Fahrenheit</option>
+                  <option value="Kelvin" class="white-text">Kelvin</option>
+                </select>
+                <label class="white-text">From</label>
+              </div>
+
+              <div class="icon-div col s2">
+                <i class="fa-solid fa-chevron-right center-align"></i>
+              </div>
+
+              <div class="input-field col s5">
+                <select name="tempTo" id="tempTo" class="white-text">
+                  <option value="Celsius" class="white-text">Celsius</option>
+                  <option value="Fahrenheit" class="white-text" selected>Fahrenheit</option>
+                  <option value="Kelvin" class="white-text">Kelvin</option>
+                </select>
+                <label class="white-text">To</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field">
+                <input class="white-text" name="tempFromInput" id="tempFromInput" type="number">
+                <label for="tempFromInput" class="white-text">Celsius Value</label>
+              </div>
+              <!-- <div class="input-field">
+                <input class="white-text" name="tempToInput" id="tempToInput" type="number">
+                <label for="tempToInput" class="white-text">Fahrenheit Value</label>
+              </div> -->
+            </div>
+
+            <div class="row">
+              <button id="calculateBtn" class="btn red lighten-2 waves-effect waves-light z-depth-0">Calculate</button>
+
+              <h5 class="result-heading">Result</h5>
+              <h5 id="result" class="white-text"></h5>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+</body>
+
+ <!-- jQuery -->
+ <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+ <script src="app.js"></script>
+
+ <script>
+  $(document).ready(function () {
+
+    // INITIALIZE SELECT LIST
+    
+  $(document).ready(function(){
+    $('select').formSelect();
+  });
+
+  });
+</script>
+</html>
