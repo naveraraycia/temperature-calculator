@@ -14,15 +14,20 @@ calculate()
 
 function calculate(){
   form.addEventListener('submit', function(e){
-    if(selectFrom.value === selectTo.value){
-      alert('Please convert different values')
+    parseFloat(convertFrom.value)
+    if(convertFrom.value === '' || isNaN(convertFrom.value)){
+      alert('Please enter a valid value to convert')
     } else {
-      if(selectFrom.value === 'Celsius'){
-        convertFromCelsius(convertFrom.value)
-      } else if(selectFrom.value === 'Fahrenheit'){
-        convertFromFahrenheit(convertFrom.value)
+      if(selectFrom.value === selectTo.value){
+        alert('Please convert different values')
       } else {
-        convertFromKelvin(convertFrom.value)
+        if(selectFrom.value === 'Celsius'){
+          convertFromCelsius(convertFrom.value)
+        } else if(selectFrom.value === 'Fahrenheit'){
+          convertFromFahrenheit(convertFrom.value)
+        } else {
+          convertFromKelvin(convertFrom.value)
+        }
       }
     }
     
